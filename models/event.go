@@ -1,3 +1,4 @@
+// Package models defines every model used by the rest api
 package models
 
 import "time"
@@ -14,7 +15,7 @@ type Event struct {
 var events = []Event{}
 
 func (e Event) Save() {
-	// TODO: implement it in a database, for now just a dummy implementation
+	// later: add it to a database
 	events = append(events, e)
 }
 
