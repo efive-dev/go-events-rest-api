@@ -1,6 +1,7 @@
 package main
 
 import (
+	"main/db"
 	"main/models"
 	"net/http"
 
@@ -8,6 +9,7 @@ import (
 )
 
 func main() {
+	db.InitDB()
 	server := gin.Default()
 
 	server.GET("/events", getEvents) // GET, POST, PUT, PATCH, DELETE
