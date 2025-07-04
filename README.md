@@ -45,7 +45,3 @@ The API consists of various endpoints:
 | **DELETE**      | `/events/{event_id}`         | Deletes the event given its id. It requires authentication and also only the creator of an event may delete it.                       |
 | **POST**        | `events/{event_id}/register` | Allows a user to register for a certain event. It requires authentication.                                                            |
 | **DELETE**      | `events/{event_id}/register` | Allows a user to delete registration for a certain event. It requires authentication.                                                 |
-
-```
-
-```
